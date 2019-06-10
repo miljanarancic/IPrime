@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Student Applications</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div id="change-buttons">
+      <div class="change-button left">Add</div>
+      <div class="change-button right">List</div>
+    </div>
+    <div class="section add">
+      <form>
+        <div class="input-container">
+          <label for="name">Name:</label>
+          <input class="input" type="text" name="name" required>
+        </div>
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <input class="input" type="email" name="email" required>
+        </div>
+        <div class="input-container">
+          <label for="age">Age:</label>
+          <input class="input" type="number" name="age" required>
+        </div>
+        <div class="input-container">
+          <label for="phone">Phone:</label>
+          <input class="input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" required>
+          <em><label class="input-format">Format: 060-000-0000</label></em>
+        </div>
+        <div class="input-container">
+          <label for="communication">Preferred Way of Communication:</label>
+          <div>
+            <input class="input" type="radio" value="Email" name="communication" required>
+            <label>Email</label>
+          </div>
+          <div>
+            <input class="input" type="radio" value="Phone" name="communication" required>
+            <label>Phone</label>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="english-level">English Level:</label>
+          <select class="input" name="english-level" required>
+            <option>A2</option>
+            <option>B1</option>
+            <option>B2</option>
+            <option>C1</option>
+            <option>C2</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="to-start">Available to Start:</label>
+          <input class="input" type="text" name="to-start" required>
+          <em><label class="input-format">Format: DD-MM-YYYY</label></em>
+        </div>
+        <div class="input-container">
+          <label for="skills">Technical Skills and Courses:</label>
+          <input class="input" type="text" name="skills">
+        </div>
+        <div class="input-container">
+          <label for="presentation">Short Personal Presentation:</label>
+          <textarea class="input" rows="4" name="presentation" wrap></textarea>
+        </div>
+        <div class="input-container">
+          <div>
+            <input type="checkbox" name="from-home">
+            <label for="from-home">Study from home?</label>
+          </div>
+        </div>
+        <div id="submit-button">
+          <button class="input">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="section list hide-section">
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
